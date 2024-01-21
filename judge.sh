@@ -49,7 +49,7 @@ judge_all ()
 if [ $# -eq 0 ]; then
     judge_all
 else
-    if [ "$1" == "all" ]; then
+    if [ "$1" -eq "all" ]; then
         judge_all
     else
         if [ -d "$1" ]; then
